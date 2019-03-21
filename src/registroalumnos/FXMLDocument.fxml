@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="720.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="registroalumnos.FXMLDocumentController">
+  <children>
+    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="720.0">
+      <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a793" height="63.0" layoutX="1.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="1079.0" />
+        <Label alignment="CENTER" layoutX="0.0" layoutY="26.0" prefHeight="51.0" prefWidth="1080.0" text="Registro Alumnos" textAlignment="LEFT" textFill="#001899" wrapText="false">
+          <font>
+            <Font name="Reem Kufi Regular" size="35.0" />
+          </font>
+        </Label>
+        <TableView layoutX="490.0" layoutY="100.0" prefHeight="226.0" prefWidth="576.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="121.0" text="Matricula" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="176.0" text="Nombre(s)" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="136.0" text="Apellido Paterno" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="141.0" text="Apellido Materno" />
+          </columns>
+        </TableView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4e3dd" height="185.0" layoutX="14.0" layoutY="100.0" stroke="BLACK" strokeType="INSIDE" width="445.0" />
+        <Label layoutX="30.0" layoutY="122.0" text="Nombre">
+          <font>
+            <Font size="17.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="30.0" layoutY="160.0" text="Matricula" />
+        <Label font="$x1" layoutX="30.0" layoutY="200.0" text="Apelldo Paterno" />
+        <Label font="$x1" layoutX="30.0" layoutY="236.0" text="Apelldo Materno" />
+        <TextField layoutX="174.0" layoutY="122.0" prefWidth="274.0" />
+        <TextField layoutX="174.0" layoutY="160.0" prefWidth="274.0" />
+        <TextField layoutX="172.0" layoutY="199.0" prefWidth="274.0" />
+        <TextField layoutX="171.0" layoutY="236.0" prefWidth="274.0" />
+        <Button layoutX="14.0" layoutY="305.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="157.0" text="Agregar a Tabla">
+          <font>
+            <Font name="System Bold" size="15.0" fx:id="x3" />
+          </font>
+        </Button>
+        <Button layoutX="490.0" layoutY="341.0" mnemonicParsing="false" text="Editar">
+          <font>
+            <Font name="System Italic" size="15.0" fx:id="x2" />
+          </font>
+        </Button>
+        <Button font="$x2" layoutX="569.0" layoutY="342.0" mnemonicParsing="false" text="Eliminar" />
+        <Button font="$x3" layoutX="302.0" layoutY="305.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="157.0" text="Guardar Cambios" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
